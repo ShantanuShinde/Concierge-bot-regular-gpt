@@ -19,6 +19,8 @@ The Python package can be installed by `pip install openai`
 ## How To Run
 
 1. Clone this repo.
-2. (optional) Prepare your own knowledge base follow the format of `data/knowledge.pl` and cover it.
-3. Run `python main.py` and start chat.
+2. Install sCASP following the steps at [s(CASP) GitLab page](https://gitlab.software.imdea.org/ciao-lang/sCASP).
+3. Install openai.
+4. (optional) Prepare your own knowledge base follow the format of `data/knowledge.pl` and cover it.
+5. Run `python main.py` and start chat.
 
