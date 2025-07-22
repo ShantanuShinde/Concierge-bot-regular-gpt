@@ -62,7 +62,6 @@ def parse_predicates(inputs:str, attrs, values):
     for pred in preds:
         pred = pred.strip('.').strip()
         pred_list = []
-
         # Make sure that the predicate name is valid.
         in_list = any([pred.startswith(x) for x in pred_heads]) or any([pred.startswith('not_' + x) for x in pred_heads])
         if in_list:

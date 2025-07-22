@@ -28,7 +28,6 @@ while(session_continues):
     print(Fore.GREEN + '\n[extracted semantics] ' + Style.RESET_ALL + query_predicates)
     
     query_predicates = filter(query_predicates, attrs, values)
-
     if query_predicates == 'quit.':
         session_continues = False
         print('\n' + Fore.YELLOW + 'Bot:' + Style.RESET_ALL + '\n' + chat(query + 'Please quit.'))

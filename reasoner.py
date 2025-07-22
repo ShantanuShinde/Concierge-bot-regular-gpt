@@ -1,6 +1,7 @@
 import subprocess
 import utils
 from preference import get_prefer
+import os
 
 class reasoner():
     def __init__(self, paths):
@@ -26,7 +27,6 @@ class reasoner():
     
 
     def call(self, options: list, num_result):
-        
         parameters = ['scasp']
         parameters.extend(options)
         parameters.append(num_result)
@@ -67,7 +67,6 @@ class reasoner():
         input style: aAA(aaa), bBB(bbb), cCC(ccc)
         output style: a dict of mode and output. None for error cases.
         '''
-        
         # write the input to the file.
         with open(self.instant_path, 'w') as f:
             f.write(utils.new_query(input) + '\n')
